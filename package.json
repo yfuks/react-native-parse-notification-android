@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yfuks/react-native-notification-android.git"
+    "url": "https://github.com/yfuks/react-native-parse-notification-android.git"
   },
   "author": "Yoann Fuks (yfuks)",
   "description": "A react native module that allow you to manage parse notifications on Android devices",
