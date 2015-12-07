@@ -6,7 +6,7 @@
     "url": "https://github.com/yfuks/react-native-notification-android.git"
   },
   "author": "Yoann Fuks (yfuks)",
-  "description": "",
+  "description": "A react native module that allow you to push notification on Android devices",
   "keywords": [
     "react-native",
     "react-native-notification-android",
