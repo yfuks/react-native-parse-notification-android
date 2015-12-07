@@ -31,4 +31,8 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:0.12.+'
+
+    // @Parse
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.parse:parse-android:1.+'
 }
