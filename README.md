@@ -26,7 +26,7 @@ dependencies {
 ```java
 // file: android/app/src/main/java/com/myapp/MainActivity.java
 ...
-import com.imagepicker.NotificationAndroidPackage; // import
+import com.notificationandroid.NotificationAndroidPackage; // import
 
 public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
 
