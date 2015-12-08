@@ -67,6 +67,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
     package="com.myapp">
   
   // Add the folowing =>
+  <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.WAKE_LOCK" />
   <uses-permission android:name="android.permission.VIBRATE" />
