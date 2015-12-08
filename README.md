@@ -66,7 +66,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.myapp">
   
-  // Add the folowing =>
+  // Add the folowing => {
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -76,11 +76,11 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
   <permission android:protectionLevel="signature"
               android:name="com.myapp.permission.C2D_MESSAGE" />   // IMPORTANT replace "com.myapp" with your app package name !
   <uses-permission android:name="com.myapp.permission.C2D_MESSAGE" /> // IMPORTANT replace "com.myapp" with your app package name !
-  
+  // }
   ...
   <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
 
-  // add the folowing =>
+  // add the folowing => {
   <service android:name="com.parse.PushService" />
       <receiver android:name="com.parse.ParsePushBroadcastReceiver"
                 android:exported="false">
@@ -100,5 +100,6 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
               <category android:name="com.myapp" />
           </intent-filter>
       </receiver>
+    // }
   ...    
 ```
