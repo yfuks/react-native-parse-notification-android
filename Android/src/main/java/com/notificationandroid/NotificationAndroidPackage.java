@@ -16,7 +16,7 @@ public class NotificationAndroidPackage implements ReactPackage {
   private final Activity mMainActivity;
   private NotificationAndroidModule mModuleInstance;
 
-  public NotificationAndroidModule(Activity mainActivity) {
+  public NotificationAndroidPackage(Activity mainActivity) {
     this.mMainActivity = mainActivity;
   }
 
