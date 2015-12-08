@@ -42,7 +42,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
         mReactRootView = new ReactRootView(this);
 
         // instantiate package
-        mNotificationAndroid = new ImagePickerPackage(this);
+        mNotificationAndroid = new NotificationAndroidPackage(this);
 
         mReactInstanceManager = ReactInstanceManager.builder()
                 .setApplication(getApplication())
