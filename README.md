@@ -34,7 +34,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
     private ReactRootView mReactRootView;
 
     // declare package
-    private NotificationAndroidPackage NotificationAndroidPackage;
+    private NotificationAndroidPackage mNotificationAndroid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
