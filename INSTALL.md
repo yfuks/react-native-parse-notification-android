@@ -1,4 +1,9 @@
 ## INSTALL
+
+```
+npm install https://github.com/yfuks/react-native-parse-notification-android --save
+```
+
 ```gradle
 // file: android/settings.gradle
 ...

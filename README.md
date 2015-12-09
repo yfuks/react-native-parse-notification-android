@@ -1,5 +1,6 @@
 # react-native-parse-notification-android
-A wraper around parse to manage android devices
+A module that help you to manage your device in parse for react-native app with
+examples and native methods
 
 ## Prerequisite
 1. Create an account on https://www.parse.com/
