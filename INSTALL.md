@@ -1,9 +1,11 @@
 ## INSTALL
 
+### Install package
 ```
 npm install https://github.com/yfuks/react-native-parse-notification-android --save
 ```
 
+### Include module
 ```gradle
 // file: android/settings.gradle
 ...
@@ -12,6 +14,7 @@ include ':react-native-parse-notification-android'
 project(':react-native-parse-notification-android').projectDir = new File(settingsDir, '../node_modules/react-native-parse-notification-android/android')
 ```
 
+### Add dependencies
 ```gradle
 // file: android/app/build.gradle
 ...
@@ -23,6 +26,8 @@ dependencies {
   compile 'com.parse:parse-android:1.+'
 }
 ```
+
+### Add package
 ```java
 // file: android/app/src/main/java/com/myapp/MainActivity.java
 ...
@@ -64,6 +69,8 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
     }
 ...
 ```
+
+### Add permissions
 ```java
 // file: android/app/src/main/AndroidManifest.xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
