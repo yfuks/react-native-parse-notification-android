@@ -10,16 +10,16 @@ see the [Installation doc](./INSTALL.md)
 
 ## Usage
 
-1. Add the native module to your javascript code
+- Add the native module to your javascript code
 ```javascript
 var ParseManagerAndroid = require('NativeModules').NotificationAndroidManager;
 ```
 
-2. Then use it like so
+- Then use it like so
 ```javascript
 ParseManagerAndroid.authenticate((err) => {
   if (err) {
-    return console.log('Error will authenticate : ' + err);
+    return console.log('Error while authenticate : ' + err);
   }
   console.log('This device is now register in my app');
 });
