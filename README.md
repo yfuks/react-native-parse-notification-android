@@ -21,12 +21,15 @@ project(':react-native-parse-notification-android').projectDir = new File(settin
 dependencies {
   ...
   compile project(':react-native-parse-notification-android')
+  compile 'com.parse.bolts:bolts-android:1.+'
+  compile 'com.parse:parse-android:1.+'
 }
 ```
 ```java
 // file: android/app/src/main/java/com/myapp/MainActivity.java
 ...
 import com.notificationandroid.NotificationAndroidPackage; // import
+import com.parse.Parse; // import
 
 public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
 
@@ -35,6 +38,8 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 
     // declare package
     private NotificationAndroidPackage mNotificationAndroid;
+    // initialize parse (replace both id with coresponding values)
+    Parse.initialize(this, "MY-APP-ID", "MY-CLIENT-ID");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
