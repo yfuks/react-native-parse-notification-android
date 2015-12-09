@@ -6,4 +6,4 @@ A wraper around parse to manage android devices
 2. Create an app with your account
 
 ## Install
-see the INSTALL.md
+see the [Installation doc](./INSTALL.md)
