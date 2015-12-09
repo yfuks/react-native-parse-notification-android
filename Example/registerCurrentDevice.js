@@ -15,7 +15,7 @@ var {
 var ParseManagerAndroid = require('NativeModules').NotificationAndroidManager;
 
 if (Platform.OS === 'android') {
-  // We register our device in ou parse app
+  // We register our device in our parse app
   ParseManagerAndroid.authenticate((err) => {
     if (err) {
       return console.log(err);
