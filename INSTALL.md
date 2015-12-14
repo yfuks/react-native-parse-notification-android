@@ -42,7 +42,12 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
     // declare package
     private NotificationAndroidPackage mNotificationAndroid;
     // initialize parse (replace both id with coresponding values)
-    Parse.initialize(this, "MY-APP-ID", "MY-CLIENT-ID");
+    try {
+      Parse.initialize(this, "MY-APP-ID", "MY-CLIENT-ID");
+    } catch (IllegalStateException e) {
+      // Parse already initialized
+      e.printStackTrace();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
