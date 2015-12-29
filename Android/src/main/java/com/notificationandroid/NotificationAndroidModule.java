@@ -107,15 +107,6 @@ public class NotificationAndroidModule extends ReactContextBaseJavaModule {
    */
   @ReactMethod
   public void getString(final String field, final Callback callback) {
-    ParseInstallation.getCurrentInstallation().saveInBackground(new SaveCallback() {
-        @Override
-        public void done(ParseException e) {
-            if (e == null) {
-                callback.invoke(null, (String) ParseInstallation.getCurrentInstallation().get(field));
-            } else {
-                callback.invoke(e.getMessage());
-            }
-        }
-    });
+    callback.invoke(null, (String) ParseInstallation.getCurrentInstallation().get(field));
   }
 }
