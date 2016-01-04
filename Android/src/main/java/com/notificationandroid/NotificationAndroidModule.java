@@ -95,7 +95,7 @@ public class NotificationAndroidModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void getId(final Callback callback) {
+  public void getParseInstallationObjectId(final Callback callback) {
     callback.invoke((String) ParseInstallation.getCurrentInstallation().getObjectId());
   }
   
